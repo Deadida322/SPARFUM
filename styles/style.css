@@ -5,7 +5,7 @@
 }
 @font-face{
     font-family: GS;
-    src:url(/styles/fonts/WebFont.ttf);
+    src:url(fonts/WebFont.ttf);
 }
 body{
     background-color:  #fdf9ff;
@@ -13,7 +13,8 @@ body{
 }
 .fisrt_page{
     width: 90%;
-    margin-left:5% ;
+    margin-left:5%;
+    background-color: white;
 }
 .nav{
     display:flex;
@@ -53,7 +54,6 @@ body{
     display: none;
 }
 .first_slider .slick-dots li button:before {
-    font-family: 'slick';
     font-size: 30px;
     line-height: 20px;
     position: absolute;
@@ -65,8 +65,7 @@ body{
     text-align: center;
     opacity: .35;
     color: black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
 }
 button{
     
@@ -141,7 +140,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
 }
 .f1{
     display: flex;
@@ -198,4 +197,275 @@ h3{
     text-transform: uppercase;
     font-size: 4em;
     font-weight: normal;
+}
+.third_slider .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -100%;
+    width: 40px;
+    height: 20px;
+    content: '◼'; /* <-- Вот этот символ */
+    text-align: center;
+    opacity: .9990;
+    color: rgba(75, 7, 7, 0.767);
+}
+li.slick-active button{
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.967);
+}
+.shop_header{
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+.shop{
+    padding: 10px 10em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.shop_cards{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.shop_item{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    border: 2px solid #e4e4e4;
+    text-align: center;
+    position: relative;
+    padding: 1em;
+    margin: 3em;
+    height: 30em
+}
+.label{
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    background-color: white;
+    width: 20%;
+}
+.card_image{
+    width: 50%;
+}
+.deliver{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    width: 12em;
+    height: 4em;
+    position: absolute;
+    background-color: #f00075;
+    outline: 2px solid #e4e4e4;
+    border: 2px solid  #750c3f;
+    left: calc(50% - 6em);
+    bottom: -2em;
+}
+.order{
+    font-size: 2em;
+    
+}
+.trash{
+    width: 30px;
+}
+.card_description{
+    padding: 5px;
+    width: 200px;
+    margin: 1em;
+    border: 2px dashed #e4e4e4;
+}
+.discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.to_catalog{
+    margin: 20px;
+    transition: all .2s ease-in;
+    position: relative;
+    background-color: #750c3f;
+}
+button.to_catalog:hover{
+    width: 20%;
+}
+h2{
+    margin: 0;
+    text-transform: uppercase;
+}
+.how_to_order{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.city_buttons{
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 75%;
+}
+.cbtn{
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 30%;
+    border: 1px solid #161616
+}
+.order_header{
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+span{
+    font-size: 2rem;
+    color: red;
+    font-weight: normal;
+}
+.square{
+    width: 10em;
+    padding: 2.5em;
+    height: 10em;
+    transform: rotate(45deg);
+    border: 3px solid #e4e4e4;
+    background-color: white;
+}
+.square_img{
+    transform: rotate(-45deg);
+    width: 5em;
+}
+.squares{
+    padding:5em 15em;
+    display: flex;
+    justify-content: space-around;
+}
+.square_desc{
+    width: 16em;
+    margin-top: 3em;
+    margin-left: -3em;
+    text-align: center;
+}
+.line_container{
+    position: relative;
+    padding: 0% 15%;
+}
+.line{
+    height: 3px;
+    background-color: #fcb5b5;
+    margin-bottom: 2em;
+    margin-top: -2em;
+}
+.romb{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    outline: 10px solid white;
+    border: 3px solid  #fcb5b5;
+    background-color: white;
+    left: calc(50% - 2em);
+    top: -0.85em;
+    transform: rotate(-45deg);
+    border-radius:4px;
+}
+.conditions_header{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+}
+.map1{
+    width: 80%;
+    margin-top: 2em;
+    margin-left:10%;
+    height: 35em;
+    margin-bottom: 7em;
+}
+.footer{
+    background-color: #f7f7f7;
+    position: relative;
+}
+.footer_container{
+    padding: 5em 10em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.head_footer{
+    background-color: #fdfdfd;
+    font-weight: normal;
+    font-size: 1.5em;
+    width: 12em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    border: 1px solid  #e4e4e4;
+    position: absolute;
+    left: calc(50% - 6em);
+    top: -1em;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2)  ; 
+}
+.footer_form{
+    padding: 1em;
+}
+input{
+    padding: 10px;
+    height: 3em;
+    width: 20em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4e4;
+    margin-top: 100px;
+}
+.name{
+    margin-bottom: 30px;
+
+}
+.footer_form{
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 25em
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.btn_submit{
+    margin-top: 30%;
+    color: #ffffff;
+    background-color: #ff5b36;
+    border-radius: 30px;
+    border: none;
+}
+.label_form{
+    font-weight: normal;
+    text-align: center;
+    color: #ff5b36;
+    font-size: 1.5em;
+}
+.fta{
+    margin: 50px 20px;
+    padding: 10px;
+    border-bottom: 2px solid #e4e4e4;
+}
+img.little{
+    width: 4em;
 }
