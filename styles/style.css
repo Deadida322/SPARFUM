@@ -980,11 +980,17 @@ p.btn_txt:hover{
         text-align: center;
     }
 }
-@media screen and (max-width: 700px ){
-    *{
-        font-size: 8px;
+@media screen and (max-width: 480px ){
+    .consult{
+        max-height: 400px;
     }
-    .cbtn{
-        padding: 0px;
+    .footer_form{
+        max-height: 260px;
+    }
+    .footer_container{
+        max-height: 320px;
+    }
+    .footer_adresses{
+        max-height: 270px;
     }
 }
