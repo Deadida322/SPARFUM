@@ -981,6 +981,9 @@ p.btn_txt:hover{
     }
 }
 @media screen and (max-width: 480px ){
+    .cbtn{
+        padding: 0;
+    }
     .consult{
         max-height: 400px;
     }
