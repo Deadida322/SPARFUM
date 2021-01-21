@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family:GS;
     font-size: 15px;
+    transition: all .2s ease-in;
 }
 @font-face{
     font-family: GS;
@@ -76,7 +77,7 @@ button{
     height: 5em;
     border-radius: 4em;
     font-size: 3em;
-    background-color: #f00075;
+    background-color:#c02a47;
 }
 .p1{
     display: flex;
@@ -96,8 +97,11 @@ h3{
     font-weight: none;
     font-size: 3em;
 }
+.in_slide{
+    margin-bottom: 1.4em;
+}
 .slick-arrow{
-    background-color: #f00075;
+    background-color:#c02a47;
     border-radius: 50%;
     color: transparent;
     font-weight: bold;
@@ -119,7 +123,7 @@ h3{
     content:'<'
 }
 .slick-arrow:hover{
-    background-color: #f00075;
+    background-color:#c02a47;
     border-radius: 50%;
     color: transparent;
     font-weight: bold;
@@ -151,7 +155,7 @@ h3{
     height: 17em;
 }
 .consult{
-    background-color: #f00075;
+    background-color:#c02a47;
     padding: 4em;
     padding-top: 8em;
     position: relative;
@@ -253,10 +257,11 @@ li.slick-active button{
 }
 .label{
     position: absolute;
-    top: -30px;
+    top: -2em;
     left: 40%;
     background-color: white;
     width: 20%;
+    border-radius: 10px;
 }
 .card_image{
     width: 50%;
@@ -269,7 +274,7 @@ li.slick-active button{
     width: 12em;
     height: 4em;
     position: absolute;
-    background-color: #f00075;
+    background-color:#c02a47;
     outline: 2px solid #e4e4e4;
     border: 2px solid  #750c3f;
     left: calc(50% - 6em);
@@ -297,10 +302,13 @@ li.slick-active button{
     margin: 20px;
     transition: all .2s ease-in;
     position: relative;
-    background-color: #750c3f;
+    background-color: #ff5b36;
+    color: #fff2f2;
+    text-decoration: uppercase;
 }
-button.to_catalog:hover{
-    width: 20%;
+.to_catalog p:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 0px  #ff364073;
 }
 h2{
     margin: 0;
@@ -373,7 +381,7 @@ span{
     position: absolute;
     width: 2em;
     height: 2em;
-    outline: 10px solid white;
+    outline: 0.5em solid white;
     border: 3px solid  #fcb5b5;
     background-color: white;
     left: calc(50% - 2em);
@@ -468,4 +476,56 @@ input{
 }
 img.little{
     width: 4em;
+}
+@media screen and (max-width: 1400px ){
+    *{
+        font-size: 10px;
+    }
+}
+.item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    text-shadow: 1px 1px 0px  #ff5b3673;
+}
+.in_slide:hover{
+    border: 2px solid  #750c3f;
+    box-shadow: 0px 0px 16px 0px  #ff5b36cb;
+}
+p.btn_txt:hover{
+    text-shadow: 1px 1px 0px  #ff5b3673;
+}
+.shop_item:hover{
+    transform: scale(1.07);
+    box-shadow: 0px 0px 20px 0px  #ff5b3681;
+}
+.deliver:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.trash+.order:hover{
+    filter: invert(1)
+}
+.social_item,.little{
+    border-radius: 50%;
+}
+.social_item:hover,.little:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 0px  #ff5b3681;
+    cursor: pointer;
+}
+.square:hover{
+    background-color: #ff5b36;
+    cursor: pointer;
+}
+.square:hover img{
+    filter: invert(1);
+}
+.cbtn p{
+    font-size: 1em;
+}
+.cbtn:hover p{
+    color: #e4e4e4;
+}
+.cbtn:hover{
+    background-color: #ff5b36;
 }
