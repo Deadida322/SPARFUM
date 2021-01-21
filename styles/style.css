@@ -629,7 +629,7 @@ p.btn_txt:hover{
     }
     .consult{
         background-color:#c02a47;
-        padding: 1em;
+        padding: 0em;
         padding-top: 8em;
         position: relative;
     }
@@ -663,5 +663,149 @@ p.btn_txt:hover{
     .header{
         height: 50px;
         box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
+    }
+    .name{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px ){
+    *{
+        font-size: 9px;
+    }
+    .fisrt_page{
+        width: 100vw;
+        margin-left:0%;
+    }
+    .item{
+        display: none;
+    }
+    .map1{
+        width: 100%;
+        margin-left:0%;
+    }
+    .shop{
+        padding: 10px 10px;
+    }
+    .shop_cards{
+        width: 100%;
+    }
+    .shop_item{
+        width: 33%;
+        height: 100%;
+        padding: 0.5em;
+        margin: 2em 0.5em;
+        height: 20em;
+    }
+    .label{
+        z-index: 301;
+    }
+    .footer_container{
+        padding: 3em 2em;
+    }
+    .square{
+        width: 7em;
+        padding: 1.5em;
+        height: 7em;
+    }
+    .squares{
+        padding:5em 0em;
+        width: 90%;
+        margin-left: 7%;
+    }
+    .square_img{
+        transform: rotate(-45deg);
+        width: 3em;
+    }
+    .square_item{
+        width: 24%;
+    }
+    .square_desc{
+        width: 10em;
+        margin-top: 3em;
+        margin-left: -2em;
+    }
+    .social_links{
+        display: flex;
+        justify-content: space-around;
+        width: 15em;
+    
+    }
+    .social_links img{
+        width: 4em;
+    }
+    .fta{
+        margin: 10px 20px;
+        padding: 5px;
+    }
+    .deliver{
+        padding: 5px;
+        width: 10em;
+        height: 4em;
+        left: calc(50% - 5em);
+    }
+    .order{
+        font-size: 1.5em;
+    }
+    .label{
+        left: 30%;
+        width: 40%;
+    }
+    .card_image{
+        width: 60%;
+    }
+    .city_buttons{
+        width: 100%;
+    }
+    
+    .third_slider{
+        width: 100%;
+    }
+    .consult{
+        background-color:#c02a47;
+        padding: 0em;
+        padding-top: 8em;
+        position: relative;
+    }
+    .fb{
+        right: 32%;
+    }
+    .unheader{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    .third_slider .slick-dots li button:before {
+
+        font-size: 20px;
+        top: -30px;
+        left: 0%;
+        width: 20px;
+        height: 10px;
+        color: rgba(75, 7, 7, 0.767);
+    }
+    .first_slider{
+        display: none;
+    }
+    .second_slider{
+        padding: 1em;
+        width: 100%;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .header{
+        height: 50px;
+        box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
+    }
+    .name{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px ){
+    *{
+        font-size: 8px;
+    }
+    .cbtn{
+        padding: 0px;
     }
 }
