@@ -985,7 +985,8 @@ p.btn_txt:hover{
         padding: 0;
     }
     .consult{
-        max-height: 400px;
+        max-height: 350px;
+        position: relative;
     }
     .footer_form{
         max-height: 260px;
@@ -996,4 +997,8 @@ p.btn_txt:hover{
     .footer_adresses{
         max-height: 270px;
     }
+    .social_links_hide{
+        display: none;
+    }
+    
 }
