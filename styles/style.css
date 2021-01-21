@@ -1,7 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family:GS;
     font-size: 15px;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
 @font-face{
@@ -18,16 +28,27 @@ body{
     background-color: white;
 }
 .nav{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .header{
-    box-shadow: -1px 15px 19px rgba(0, 0, 0, 0.05)  ; 
+    -webkit-box-shadow: -1px 15px 19px rgba(0, 0, 0, 0.05)  ;
+            box-shadow: -1px 15px 19px rgba(0, 0, 0, 0.05)  ; 
     width:100%;
     height: 100px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
-    justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: white;
 }
 .item{
@@ -36,8 +57,12 @@ body{
 }
 .two_sliders{
     background-color: white;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 .first_slider{
     padding: 2em;
@@ -79,10 +104,19 @@ button{
     background-color:#c02a47;
 }
 .p1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 h3{
     font-size: 2em;
@@ -139,16 +173,30 @@ h3{
     text-transform: uppercase;
 }
 .user{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 40%;
 }
 .f1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items:center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     background-color: white;
     width: 100%;
     height: 17em;
@@ -171,15 +219,21 @@ h3{
     border-radius: 60px;
 }
 .unheader{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .third_slider{
     width: 60%;
 }
 .social_links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 20em;
 
 }
@@ -187,10 +241,18 @@ h3{
     width: 5em;
 }
 .consult_social{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .fb{
     position: absolute;
@@ -206,7 +268,9 @@ h3{
     font-size: 30px;
     line-height: 20px;
     position: absolute;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: -30px;
     left: -100%;
     width: 40px;
@@ -229,21 +293,40 @@ li.slick-active button{
 }
 .shop{
     padding: 10px 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: white;
 }
 .shop_cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .shop_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 33%;
     height: 100%;
     border: 2px solid #e4e4e4;
@@ -265,10 +348,15 @@ li.slick-active button{
     width: 50%;
 }
 .deliver{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 5px;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 12em;
     height: 4em;
     position: absolute;
@@ -298,14 +386,19 @@ li.slick-active button{
 }
 .to_catalog{
     margin: 20px;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
     position: relative;
     background-color: #ff5b36;
     color: #fff2f2;
-    text-decoration: uppercase;
+    -webkit-text-decoration: uppercase;
+            text-decoration: uppercase;
 }
 .to_catalog p:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     text-shadow: 1px 1px 0px  #ff364073;
 }
 h2{
@@ -313,16 +406,27 @@ h2{
     text-transform: uppercase;
 }
 .how_to_order{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .city_buttons{
     text-align: center;
     font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     text-transform: uppercase;
     width: 75%;
 }
@@ -346,18 +450,25 @@ span{
     width: 10em;
     padding: 2.5em;
     height: 10em;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     border: 3px solid #e4e4e4;
     background-color: white;
 }
 .square_img{
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     width: 5em;
 }
 .squares{
     padding:5em 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .square_desc{
     width: 16em;
@@ -384,7 +495,9 @@ span{
     background-color: white;
     left: calc(50% - 2em);
     top: -0.85em;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     border-radius:4px;
 }
 .conditions_header{
@@ -405,15 +518,28 @@ span{
 }
 .footer_container{
     padding: 5em 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
 }
 .footer_adresses{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 .head_footer{
     background-color: #fdfdfd;
@@ -428,7 +554,8 @@ span{
     position: absolute;
     left: calc(50% - 6em);
     top: -1em;
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2)  ; 
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2)  ;
+            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2)  ; 
 }
 .footer_form{
     padding: 1em;
@@ -447,18 +574,33 @@ input{
 
 }
 .footer_form{
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ; 
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ;
+            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: white;
     width: 25em
 }
 .inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .btn_submit{
     margin-top: 30%;
@@ -487,34 +629,46 @@ img.little{
     }
 }
 .item:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
     cursor: pointer;
     text-shadow: 1px 1px 0px  #ff5b3673;
 }
 .in_slide:hover{
     border: 2px solid  #750c3f;
-    box-shadow: 0px 0px 16px 0px  #ff5b36cb;
+    -webkit-box-shadow: 0px 0px 16px 0px  #ff5b36cb;
+            box-shadow: 0px 0px 16px 0px  #ff5b36cb;
 }
 p.btn_txt:hover{
     text-shadow: 1px 1px 0px  #ff5b3673;
 }
 .shop_item:hover{
-    transform: scale(1.07);
-    box-shadow: 0px 0px 20px 0px  #ff5b3681;
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
+    -webkit-box-shadow: 0px 0px 20px 0px  #ff5b3681;
+            box-shadow: 0px 0px 20px 0px  #ff5b3681;
 }
 .deliver:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
     cursor: pointer;
 }
 .trash+.order:hover{
-    filter: invert(1)
+    -webkit-filter: invert(1);
+            filter: invert(1)
 }
 .social_item,.little{
     border-radius: 50%;
 }
 .social_item:hover,.little:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px 0px  #ff5b3681;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 20px 0px  #ff5b3681;
+            box-shadow: 0px 0px 20px 0px  #ff5b3681;
     cursor: pointer;
 }
 .square:hover{
@@ -522,7 +676,8 @@ p.btn_txt:hover{
     cursor: pointer;
 }
 .square:hover img{
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
 }
 .cbtn p{
     font-size: 1em;
@@ -580,7 +735,9 @@ p.btn_txt:hover{
         margin-left: 7%;
     }
     .square_img{
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
         width: 3em;
     }
     .square_item{
@@ -592,8 +749,11 @@ p.btn_txt:hover{
         margin-left: -2em;
     }
     .social_links{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 15em;
     
     }
@@ -637,9 +797,15 @@ p.btn_txt:hover{
         right: 32%;
     }
     .unheader{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column-reverse;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .third_slider .slick-dots li button:before {
 
@@ -662,7 +828,8 @@ p.btn_txt:hover{
     }
     .header{
         height: 50px;
-        box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
+        -webkit-box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ;
+                box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
     }
     .name{
         text-align: center;
@@ -713,7 +880,9 @@ p.btn_txt:hover{
         margin-left: 7%;
     }
     .square_img{
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
         width: 3em;
     }
     .square_item{
@@ -725,8 +894,11 @@ p.btn_txt:hover{
         margin-left: -2em;
     }
     .social_links{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 15em;
     
     }
@@ -770,9 +942,15 @@ p.btn_txt:hover{
         right: 32%;
     }
     .unheader{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column-reverse;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .third_slider .slick-dots li button:before {
 
@@ -795,7 +973,8 @@ p.btn_txt:hover{
     }
     .header{
         height: 50px;
-        box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
+        -webkit-box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ;
+                box-shadow: -1px 15px 9px rgba(0, 0, 0, 0.075)  ; 
     }
     .name{
         text-align: center;
