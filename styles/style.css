@@ -875,9 +875,10 @@ p.btn_txt:hover{
         height: 7em;
     }
     .squares{
-        padding:5em 0em;
-        width: 90%;
-        margin-left: 7%;
+        padding:4em 0em;
+        width: 97%;
+        
+        margin-left: 3%;
     }
     .square_img{
         -webkit-transform: rotate(-45deg);
@@ -886,12 +887,12 @@ p.btn_txt:hover{
         width: 3em;
     }
     .square_item{
-        width: 24%;
+        width: 23%;
     }
     .square_desc{
-        width: 10em;
+        width: 8em;
         margin-top: 3em;
-        margin-left: -2em;
+        margin-left: -1em;
     }
     .social_links{
         display: -webkit-box;
@@ -904,6 +905,7 @@ p.btn_txt:hover{
     }
     .social_links img{
         width: 4em;
+        height: 4em;
     }
     .fta{
         margin: 10px 20px;
@@ -997,8 +999,7 @@ p.btn_txt:hover{
     .footer_adresses{
         max-height: 270px;
     }
-    .social_links_hide{
-        display: none;
-    }
+
+    .fb{}
     
 }
