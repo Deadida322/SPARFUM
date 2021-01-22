@@ -172,6 +172,7 @@ h3{
 .slick-prev:hover, .slick-next:hover{background-color:#d2a66b}
 .icon{
     width: 6em;
+    height: 6em;
     border-radius: 50%;
     border: 3px solid #ff7c8f;
     margin: 1em;
