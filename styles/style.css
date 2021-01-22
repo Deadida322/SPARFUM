@@ -14,6 +14,10 @@
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+a{
+    text-decoration: none;
+    color: #161616;
+}
 @font-face{
     font-family: GS;
     src:url(fonts/WebFont.ttf);
@@ -69,8 +73,8 @@ body{
     width: 30%;
 }
 .second_slider{
-    padding: 2em;
-    width: 70%;
+    padding: 0.5em;
+    width: 90%;
 }
 .photo_item{
     width: 100%;
@@ -117,6 +121,10 @@ button{
     -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
+}
+.feedback{
+    padding: 2px;
+    margin-top: -4em;
 }
 h3{
     font-size: 2em;
@@ -171,6 +179,7 @@ h3{
 .name{
     color: #ff7c8f;
     text-transform: uppercase;
+    text-align: center;
 }
 .user{
     display: -webkit-box;
@@ -193,18 +202,19 @@ h3{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-between;
     -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
     background-color: white;
     width: 100%;
     height: 17em;
+    padding: 0.3em
 }
 .consult{
     background-color:#c02a47;
     padding: 4em;
-    padding-top: 8em;
+    padding-top: 2em;
     position: relative;
 }
 .consult_description{
@@ -255,13 +265,15 @@ h3{
             align-items: center;
 }
 .fb{
-    position: absolute;
-    top: -20px;
-    right: 25%;
+    position: relative;
+    margin-top: 0px;
+    text-align: center;
     color: white;
+    padding: 0;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 .third_slider .slick-dots li button:before {
     font-family: 'slick';
@@ -628,6 +640,11 @@ img.little{
         font-size: 10px;
     }
 }
+.price{
+    font-size: 2em;
+    margin-top: -1em;
+    color: #ff5b36;
+}
 .item:hover{
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -688,7 +705,12 @@ p.btn_txt:hover{
 .cbtn:hover{
     background-color: #ff5b36;
 }
-
+.prev{
+    
+}
+.p2{
+    display: block;
+}
 
 @media screen and (max-width: 700px ){
     *{
@@ -788,13 +810,11 @@ p.btn_txt:hover{
         width: 100%;
     }
     .consult{
-        background-color:#c02a47;
-        padding: 0em;
-        padding-top: 8em;
         position: relative;
+        padding: 0em;
+        padding-top: 1em;        
     }
     .fb{
-        right: 32%;
     }
     .unheader{
         display: -webkit-box;
@@ -836,6 +856,12 @@ p.btn_txt:hover{
     }
 }
 @media screen and (max-width: 700px ){
+    .card_description{
+        padding: 5px;
+        width: 70%;
+        margin: .3em;
+        border: 2px dashed #e4e4e4;
+    }
     *{
         font-size: 9px;
     }
@@ -914,9 +940,9 @@ p.btn_txt:hover{
     }
     .deliver{
         padding: 5px;
-        width: 10em;
-        height: 4em;
-        left: calc(50% - 5em);
+        width: 9em;
+        height: 3em;
+        left: calc(50% - 4.5em);
     }
     .order{
         font-size: 1.5em;
@@ -938,11 +964,8 @@ p.btn_txt:hover{
     .consult{
         background-color:#c02a47;
         padding: 0em;
-        padding-top: 8em;
+        padding-top: 1em;
         position: relative;
-    }
-    .fb{
-        right: 32%;
     }
     .unheader{
         display: -webkit-box;

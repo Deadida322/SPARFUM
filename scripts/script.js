@@ -8,10 +8,14 @@ $(document).ready(function(){
         dots: true,
 
     });
-    $('.second_slider').slick({
-        arrows:true,
-        infinite: true,
-        slidesToShow:1,
+    $('#second_slider').lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 10,
+        loop: true,
+        pager: false,
+       
     });
     $('.third_slider').slick({
         arrows:false,
