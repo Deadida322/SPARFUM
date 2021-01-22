@@ -901,6 +901,7 @@ p.btn_txt:hover{
         -ms-flex-pack: distribute;
             justify-content: space-around;
         width: 15em;
+        margin-bottom: 1em;
     
     }
     .social_links img{
@@ -987,7 +988,7 @@ p.btn_txt:hover{
         padding: 0;
     }
     .consult{
-        max-height: 350px;
+        max-height: 420px;
         position: relative;
     }
     .footer_form{
