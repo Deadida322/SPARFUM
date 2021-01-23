@@ -721,6 +721,9 @@ p.btn_txt:hover{
 .p2{
     display: block;
 }
+.cat{
+    height: 800px
+}
 
 @media screen and (max-width: 700px ){
     *{
@@ -729,6 +732,9 @@ p.btn_txt:hover{
     .fisrt_page{
         width: 100vw;
         margin-left:0%;
+    }
+    .cat{
+        height: 600px
     }
     .item{
         display: none;
@@ -989,7 +995,6 @@ p.btn_txt:hover{
                 flex-direction: column-reverse;
     }
     .third_slider .slick-dots li button:before {
-
         font-size: 20px;
         top: -30px;
         left: 0%;
